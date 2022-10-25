@@ -32,3 +32,22 @@ function makeColumns(cellNum) {
 
     };
 };
+
+document.querySelectorAll(".cell").forEach(item => {
+    item.addEventListener('mouseover', event => {
+        item.style.backgroundColor = "black";
+    })
+})
+
+function reset()
+{
+    container.textContent="";
+    defaultGrid();    
+    document.querySelectorAll(".cell").forEach(item => {
+        item.addEventListener('mouseover', event => {
+            item.style.backgroundColor = "black";
+        })
+    })
+}
+
+resetButton.addEventListener("click", reset)
