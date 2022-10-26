@@ -1,9 +1,30 @@
 
 
 .cell {
-    border: 1px solid #000000;
-    min-width: 20px;
-    min-height: 20px;
-    display: inline-block;
-    margin-right: 2px;
+    display:flex;
+    padding: 3px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
   }
+
+  #container {
+    display: grid;
+    justify-content: center;
+    margin:auto;
+    grid-template-columns: repeat(var(--numCols), 1fr);
+    grid-template-rows: repeat(var(--numRows), 1fr);
+    width: 550px;
+    height: 550px;
+    border: black solid 8px;
+}
+
+.resetButton{
+  margin:  auto;
+  margin-top: 4px;
+  display: block;
+}
+
+h1{
+  text-align: center;
+  color: red;
+}
