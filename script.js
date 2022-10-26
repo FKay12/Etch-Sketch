@@ -4,7 +4,7 @@ const container = document.getElementById("container");
 /* let rows = document.getElementsByClassName("gridRow");
 let cells = document.getElementsByClassName("cell"); */
 let cell;
-let target; 
+
 
 function makeCell (numCell) {
     for (let c = 0; c < numCell; c++) {
